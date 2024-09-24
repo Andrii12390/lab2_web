@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/flex.css" />
-    <title>Grid Layout</title>
+    <title>Flex Layout</title>
   </head>
   <body class="no-scrollbar">
     <main class="main-flex">
@@ -41,7 +41,15 @@
 
         <div class="content-middle no-scrollbar">
           <div class="top-section">
-            <img src="../images/jojo.jpg" alt="Image" />
+            <img src="../images/jojo.jpg" usemap="#map" alt="Image" />
+            <map name="map">
+              <area
+                shape="rect"
+                coords="0,0,1440,850"
+                href="https://ficeadvisor.com/"
+                alt="Clickable Image"
+              />
+            </map>
           </div>
           <div class="bottom-section">
             <ul class="navbar">
