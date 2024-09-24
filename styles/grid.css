@@ -50,14 +50,14 @@ body {
   grid-template-rows: auto 1fr;
 }
 
-.content-left > .top-section {
+.content-left .top-section {
   padding: 10px;
   background-color: rgba(234,241,221,255);
   text-align: center;
   word-break: break-all;
 }
 
-.content-left > .top-section > ol {
+.content-left .top-section > ol {
   margin: 0;
 }
 
@@ -65,21 +65,26 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
   overflow-y: auto;
+  background-color: rgba(234,241,221,255);
+  vertical-align: center;
 }
 
-.content-middle > .top-section > img {
+.content-middle .top-section {
+  align-self: center;
+}
+.content-middle .top-section > img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .content-middle > .bottom-section {
   padding: 20px 10px;
-  background-color: rgba(234,241,221,255);
 }
 
 .navbar {
   display: grid;
+  padding: 0;
   grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
 }
 

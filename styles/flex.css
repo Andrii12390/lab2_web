@@ -43,12 +43,14 @@ body {
 .content-middle {
   flex-basis: 60%;
   overflow-y: auto; 
+  background-color: rgba(234,241,221,255);
 }
 
 .content-left > .top-section {
   padding: 10px;
   background-color: rgba(234,241,221,255);
   text-align: center;
+  word-break: break-all;
 }
 
 .content-left > .top-section > ol {
@@ -63,6 +65,8 @@ body {
 
 .content-middle > .top-section {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .content-middle > .top-section > img {
@@ -70,11 +74,12 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: max-content;
+  max-height: max-content;
 }
 
 .content-middle > .bottom-section {
   padding: 10px;
-  background-color: rgba(234,241,221,255);
 }
 
 .content-right {
@@ -82,9 +87,11 @@ body {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
-  column-gap: 40px;
+  column-gap: 10px;
+  padding: 0;
 }
 
 .navbar > li {
@@ -92,6 +99,8 @@ body {
   text-align: center;
   color: black;
 }
+
+
 
 .no-scrollbar::-webkit-scrollbar {
   width: 0;
