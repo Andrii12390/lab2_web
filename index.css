@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+  background: linear-gradient(to top right, rgb(106, 106, 185), rgb(197, 136, 240));
+}
+
+.layout-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 192, 96);
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.layout-button:hover {
+  background-color: rgb(0, 175, 96);
+}
+
+.button-text{
+  font-size: 22px;
+  font-weight: bolder;
+  background: linear-gradient(to right, rgb(111, 111, 228), rgb(91, 91, 189));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
